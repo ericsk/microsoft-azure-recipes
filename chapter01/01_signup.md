@@ -12,5 +12,20 @@
 * 信用卡 （VISA 金融卡需開通海外消費）
 * 手機號碼
 
-信用卡及手機號碼主要是做身份驗證的用途，在驗證信用卡時會有一筆約新台幣 40 元的刷卡費用，**這筆費用並不會請款**，而且所有 Microsoft Azure 訂閱帳戶預設都會開啟*消費限制*，只要這個限制未移除，是不能向您收錢的，您可以自行決定是否要移除來繼續使用。
+	信用卡及手機號碼主要是做身份驗證的用途，在驗證信用卡時會有一筆約新台幣 40 元的刷卡費用，**這筆費用並不會請款**，而且所有 Microsoft Azure 訂閱帳戶預設都會開啟*消費限制*，只要這個限制未移除，是不能向您收錢的，您可以自行決定是否要移除來繼續使用。
 
+## 申請 Microsoft 帳號
+
+如果您已經擁有 Microsoft 帳號，那可以略過這個部份。申請 Microsoft 帳號是完全免費的，只要開啟 https://signup.live.com/ 就可以進入 Microsoft 帳號的申請頁面。
+
+![申請 Microsoft 帳號的頁面](http://i.imgur.com/FDtf8oR.png)
+圖: 申請 Microsoft 帳號的頁面
+
+只要按照欄位填好資料就可以有一個 Microsoft 帳號，要注意的是要完整地填寫正確的*生日*、*電話號碼*，才不會在之後開啟 Microsoft Azure 訂閱時遇到錯誤發生。
+
+## 註冊 Microsoft Azure 訂閱帳戶
+
+1. 打開 http://azure.microsoft.com/zh-tw/pricing/free-trial/ 頁面，點擊**立即試用**的按鈕就可以開始註冊流程。
+![免費試用 Microsoft Azure](http://i.imgur.com/QfWu0Tv.png)
+
+2. 登入 Microsoft 帳號後，
