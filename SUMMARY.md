@@ -2,6 +2,6 @@
 
 * [Microsoft Azure 食譜](README.md)
 * [帳號訂閱及帳單](chapter01/README.md)
-   * [ 建立 Microsoft Azure 訂閱帳戶](chapter01/01_signup.md)
-   * [使用 Azure Pass 啟用 Microsoft Azure 訂閱帳號](chapter01/02_azurepass.md)
+   * [建立 Microsoft Azure 訂閱帳戶](chapter01/01_signup.md)
+   * [使用 Microsoft Azure Pass 啟用 Microsoft Azure 訂閱帳號](chapter01/02_azurepass.md)
 
