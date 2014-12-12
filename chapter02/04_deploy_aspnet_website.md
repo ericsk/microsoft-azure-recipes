@@ -1,4 +1,4 @@
-# 2.3 部署 ASP.NET 網站應用程式
+# 2.4 部署 ASP.NET 網站應用程式
 
 Microsoft Azure 網站服務的 .NET 執行環境支援 .NET 3.5 及 4.5，底層的伺服器是以 IIS 為基礎開發的，所以只要您的 ASP.NET 應用程式在 .NET 3.5 或 4.5 的環境下執行沒有問題，部署到 Microsoft Azure 網站服務也是很容易的。
 
