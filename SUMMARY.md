@@ -7,4 +7,5 @@
 * [網站服務](chapter02/README.md)
    * [建立 Microsoft Azure 網站服務](chapter02/01_create_a_website.md)
    * [設定部署驗證](chapter02/02_configure_authentication.md)
+   * [部署靜態網站](chapter02/03_deploy_static_website.md)
    * [部署 ASP.NET 網站應用程式](chapter02/04_deploy_aspnet_website.md)
