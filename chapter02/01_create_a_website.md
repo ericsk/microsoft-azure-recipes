@@ -1,4 +1,4 @@
-# 2.1 建立 Microsoft Azure 網站服務
+# 2.1 建立 Microsoft Azure 網站實體
 
 若要把網站應用程式放在 Microsoft Azure 上運作，首先要建立一個網站的實體（instance），再把網站應用程式部署上來運作。這篇文章將介紹如何使用管理後台建立網站服務。
 
