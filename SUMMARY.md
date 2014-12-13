@@ -9,3 +9,4 @@
    * [設定部署驗證](chapter02/02_configure_authentication.md)
    * [部署靜態網站](chapter02/03_deploy_static_website.md)
    * [部署 ASP.NET 網站應用程式](chapter02/04_deploy_aspnet_website.md)
+   * [部署 PHP 網站應用程式](chapter02/05_deploy_aspnet_website.md)
