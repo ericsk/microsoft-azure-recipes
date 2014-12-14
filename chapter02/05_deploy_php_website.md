@@ -11,9 +11,9 @@ Microsoft Azure 網站服務目前直接支援 PHP 5.3, 5.4 及 5.5 的執行環
 
 部署 PHP 網站應用程式非常簡單，只要將 PHP 檔案上傳至對應的目錄，如：**site\wwwroot**（詳見[2.3 部署靜態網站](03_deploy_static_website.md)）立刻就可以運作。而若要調整使用的 PHP 的版本，打開網站的管理頁面，切換到**設定**的頁面，可以直接切換 PHP 版本，然後儲存設定，立即生效。
 
-(圖)
+![設定網站的 PHP 版本](https://skgitbook.blob.core.windows.net/azurerecipestw/2-5-1-config-php-versions.png)
 
-## 適應開發框架調整設定
+## 根據開發框架調整設定
 
 有些 PHP 開發框架，如：Zend Framework、Laravel 等有自己的應用程式目錄結構（例如，根目錄的對應是 **public/**），另外則需要 Web 伺服器做 URL Rewrite 的操作，這樣的特例就需要在設定上做些調整，以下針對 Laravel 的應用程式來介紹設定部署的流程。
 
@@ -37,9 +37,12 @@ Microsoft Azure 網站服務目前直接支援 PHP 5.3, 5.4 及 5.5 的執行環
     </system.webServer>
   </configuration>
   ```
+
   2. 將基於 Laravel 寫成的 PHP 應用程式的檔案都部署到預設的根目錄 **site\wwwrooot** 目錄下。
+
   3. 前往網站的管理頁面，到**設定**的頁籤，修改**虛擬應用程式和目錄**的設定，將 **/** 修改成對應到 **site\wwwroot\public**，因為 Laravel 的應用程式根目錄是在 **public**。
-    (圖)
+
+    ![設定網站根目錄對應檔案系統的路徑](https://skgitbook.blob.core.windows.net/azurerecipestw/2-5-2-config-virtual-directory.png)
 
 ## 使用自訂的 PHP 直譯器
 
