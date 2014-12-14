@@ -11,8 +11,8 @@
    * [部署靜態網站](chapter02/03_deploy_static_website.md)
    * [部署 ASP.NET 網站應用程式](chapter02/04_deploy_aspnet_website.md)
    * [部署 PHP 網站應用程式](chapter02/05_deploy_php_website.md)
+* [虛擬機器服務](chapter03/Index.md)
 * [行動服務]
-* [虛擬機器服務]
 * [SQL 資料庫服務]
 * [媒體服務]
 * [大數據]
