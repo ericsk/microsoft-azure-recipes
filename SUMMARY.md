@@ -12,6 +12,7 @@
    * [部署 ASP.NET 網站應用程式](chapter02/04_deploy_aspnet_website.md)
    * [部署 PHP 網站應用程式](chapter02/05_deploy_php_website.md)
 * [虛擬機器服務](chapter03/Index.md)
+   * [建立虛擬機器](chapter03/01_create_virtual_machine.md)
 * [儲存體服務](chapter04/Index.md)
    * [建立儲存體帳號](chapter04/01_create_storage_account.md)
 * [資料庫服務]
