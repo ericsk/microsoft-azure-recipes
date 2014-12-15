@@ -46,7 +46,9 @@
 
 ![佈建虛擬機器中](https://skgitbook.blob.core.windows.net/azurerecipestw/3-1-6-deploying-vm.png)
 
-等待約數分鐘後，管理後台上顯示該虛擬機器的狀態為**已啟動**時就可以連線進去操作了。
+等待約數分鐘後，管理後台上顯示該虛擬機器的狀態為**正在執行**時就可以連線進去操作了。
+
+![虛擬機器已經可以使用](https://skgitbook.blob.core.windows.net/azurerecipestw/3-1-7-vm-is-running.png)
 
 
 ## 注意事項
