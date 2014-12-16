@@ -1,8 +1,16 @@
 {
-  "plugins": ["disqus"],
+  "plugins": ["disqus", "ga", "bootstrapjs","exercises","quizzes","mathjax"],
   "pluginsConfig": {
 	"disqus": {
 	  "shortName": "azurerecipes"
+	},
+	"ga": {
+	  "token": "UA-118317-48"
+	},
+	"bootstrapjs": {
+	  "modal": true,
+	  "dropdown": true,
+	  "popover": { selector: "[data-toggle=popover]" }
 	}
   }
 }
