@@ -1,5 +1,5 @@
 {
-  "plugins": ["disqus", "ga", "bootstrapjs","exercises","quizzes","mathjax"],
+  "plugins": ["disqus", "ga","bootstrapjs"],
   "pluginsConfig": {
 	"disqus": {
 	  "shortName": "azurerecipes"
@@ -8,9 +8,9 @@
 	  "token": "UA-118317-48"
 	},
 	"bootstrapjs": {
-	  "modal": true,
-	  "dropdown": true,
-	  "popover": { selector: "[data-toggle=popover]" }
+	  modal: true,
+	  dropdown: true,
+	  popover: { selector: "[data-toggle=popover]" }
 	}
   }
 }
