@@ -1,16 +1,11 @@
 {
-  "plugins": ["disqus", "ga","bootstrapjs"],
+  "plugins": ["disqus", "ga"],
   "pluginsConfig": {
 	"disqus": {
 	  "shortName": "azurerecipes"
 	},
 	"ga": {
 	  "token": "UA-118317-48"
-	},
-	"bootstrapjs": {
-	  modal: true,
-	  dropdown: true,
-	  popover: { selector: "[data-toggle=popover]" }
 	}
   }
 }
