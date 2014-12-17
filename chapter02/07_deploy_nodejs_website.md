@@ -68,6 +68,7 @@ Microsoft Azure 網站服務上的 IIS 環境已經佈建好 [iisnode](https://g
 
 來指定要執行應用程式的 node 執行檔，最後部署到 Azure 網站服務的目錄結構應該會像是這樣：
 
+  ```
   site/
     wwwroot/
       bin/
@@ -75,6 +76,7 @@ Microsoft Azure 網站服務上的 IIS 環境已經佈建好 [iisnode](https://g
       app.js
       iisnode.yml
       web.config
+  ```
 
 這樣一來，應用程式就會使用自帶的 node 執行檔來執行了。
 
