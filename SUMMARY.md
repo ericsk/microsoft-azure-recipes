@@ -16,6 +16,7 @@
    * [部署 Java 網站應用程式](chapter02/08_deploy_java_website.md)
 * [虛擬機器服務](chapter03/README.md)
    * [建立虛擬機器](chapter03/01_create_virtual_machine.md)
+   * [新增磁碟機到虛擬機器](chapter03/02_attach_a_new_disk.md)
 * [儲存體服務](chapter04/README.md)
    * [建立儲存體帳號](chapter04/01_create_storage_account.md)
 * [資料庫服務]
