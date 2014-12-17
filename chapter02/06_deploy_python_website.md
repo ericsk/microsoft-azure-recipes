@@ -32,38 +32,39 @@ Microsoft Azure 網站服務目前支援以 WFastCGI 的方式運行 Python 2.7 
 	
 就是兩個雙引號即可。接著再建立一個 **web.config** 檔案，內容指定一些像是 **PYTHON_PATH** 變數或是其它環境設定：
 
-	```xml
-	<configuration>
-	  <appSettings>
-    	<add key="PYTHONPATH" value="D:\home\site\wwwroot;D:\home\site\wwwroot\site-packages" />
-    	<add key="WSGI_HANDLER" value="django.core.handlers.wsgi.WSGIHandler()" />
-    	<add key="DJANGO_SETTINGS_MODULE" value="MyDjangoApp.settings" />
-  	  </appSettings>
-  	  <system.webServer>
-    	<handlers>
-      	  <add name="Python_FastCGI"
-           path="handler.fcgi"
-           verb="*"
-           modules="FastCgiModule"
-           scriptProcessor="D:\Python27\python.exe|D:\Python27\Scripts\wfastcgi.py"
-           resourceType="Either"
-           requireAccess="Script" />
-        </handlers>
-        <rewrite>
-          <rules>
-            <rule name="Django Application" stopProcessing="true">
-              <match url="(.*)" ignoreCase="false" />
-              <conditions>
+  ```xml
+  <?xml version="1.0" encoding="UTF-8"?>
+  <configuration>
+    <appSettings>
+      <add key="PYTHONPATH" value="D:\home\site\wwwroot;D:\home\site\wwwroot\site-packages" />
+      <add key="WSGI_HANDLER" value="django.core.handlers.wsgi.WSGIHandler()" />
+      <add key="DJANGO_SETTINGS_MODULE" value="MyDjangoApp.settings" />
+    </appSettings>
+    <system.webServer>
+      <handlers>
+        <add name="Python_FastCGI"
+             path="handler.fcgi"
+             verb="*"
+             modules="FastCgiModule"
+             scriptProcessor="D:\Python27\python.exe|D:\Python27\Scripts\wfastcgi.py"
+             resourceType="Either"
+             requireAccess="Script" />
+      </handlers>
+      <rewrite>
+        <rules>
+          <rule name="Django Application" stopProcessing="true">
+            <match url="(.*)" ignoreCase="false" />
+            <conditions>
               <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
-              </conditions>
-              <action type="Rewrite" url="handler.fcgi/{R:1}" appendQueryString="false" />
-            </rule>
-          </rules>
-        </rewrite>
-      </system.webServer>
-    </configuration>
-	```
-	
+            </conditions>
+            <action type="Rewrite" url="handler.fcgi/{R:1}" appendQueryString="false" />
+          </rule>
+        </rules>
+      </rewrite>
+    </system.webServer>
+  </configuration>
+  ```
+
 這樣一來你的專案下的目錄結構應該會像是這樣：
 
 	MyDjangoApp/
