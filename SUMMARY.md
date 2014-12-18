@@ -17,6 +17,7 @@
 * [虛擬機器服務](chapter03/README.md)
    * [建立虛擬機器](chapter03/01_create_virtual_machine.md)
    * [新增磁碟機到虛擬機器](chapter03/02_attach_a_new_disk.md)
+   * [新增服務端點（開連接埠）](chapter03/03_create_endpoint.md)
 * [儲存體服務](chapter04/README.md)
    * [建立儲存體帳號](chapter04/01_create_storage_account.md)
 * [資料庫服務]
