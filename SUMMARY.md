@@ -20,7 +20,8 @@
    * [新增服務端點（開連接埠）](chapter03/03_create_endpoint.md)
 * [儲存體服務](chapter04/README.md)
    * [建立儲存體帳號](chapter04/01_create_storage_account.md)
-* [資料庫服務]
+* [SQL Database 服務](chapter05/README.md)
+   * [建立 SQL Database](chapter05/01_create_sql_database.md) 
 * [行動服務]
 * [媒體服務]
 * [大數據]

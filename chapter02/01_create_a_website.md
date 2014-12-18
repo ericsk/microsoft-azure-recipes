@@ -12,7 +12,7 @@
 
 ![Microsoft Azure 管理後台](http://i.imgur.com/IWF6Ddz.png)
 
-接著，點擊左下角的_「新增」_，選_「計算」_ » _「網站」_，在 **URL** 的欄位中填入網站的網域名稱（Microsoft Azure 網站服務會配發一個 **XXX.azurewebsites.net** 的網址，這裡填入的就是 XXX），注意這裡會檢查名稱是否有其它使用者使用過，若出現綠色的勾勾則表示可以建立
+接著，點擊左下角的_「+新增」_，選_「計算」_ » _「網站」_，在 **URL** 的欄位中填入網站的網域名稱（Microsoft Azure 網站服務會配發一個 **XXX.azurewebsites.net** 的網址，這裡填入的就是 XXX），注意這裡會檢查名稱是否有其它使用者使用過，若出現綠色的勾勾則表示可以建立
 
 ![Microsoft Azure 管理後台的新增按鈕](http://i.imgur.com/YBMp7WX.png)
 

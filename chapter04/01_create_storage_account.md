@@ -10,7 +10,7 @@
 
 ## 如何操作
 
-跟建立其它服務的方式一樣，首先進入 Microsoft Azure 的管理後台，點擊左下方的 **+新增**，接著選擇 
+跟建立其它服務的方式一樣，首先進入 Microsoft Azure 的管理後台，點擊左下方的 _+新增_，接著選擇_資料服務_» _儲存體_» _快速建立_。
 
 ![建立儲存體帳號](https://skgitbook.blob.core.windows.net/azurerecipestw/4-1-1-create-storage-account.png)
 
