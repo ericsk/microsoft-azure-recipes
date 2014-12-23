@@ -21,7 +21,8 @@
 * [儲存體服務](chapter04/README.md)
    * [建立儲存體帳號](chapter04/01_create_storage_account.md)
 * [SQL Database 服務](chapter05/README.md)
-   * [建立 SQL Database](chapter05/01_create_sql_database.md) 
+   * [建立 SQL Database](chapter05/01_create_sql_database.md)
+   * [管理 SQL Database](chapter05/02_manage_sql_datebase.md)
 * [行動服務]
 * [媒體服務]
 * [大數據]
