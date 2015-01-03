@@ -20,6 +20,7 @@
    * [新增服務端點（開連接埠）](chapter03/03_create_endpoint.md)
 * [儲存體服務](chapter04/README.md)
    * [建立儲存體帳號](chapter04/01_create_storage_account.md)
+   * [手動上傳檔案到儲存體（BLOB）](chapter04/02_manual_upload_files_to_storage_blob.md)
 * [SQL Database 服務](chapter05/README.md)
    * [建立 SQL Database](chapter05/01_create_sql_database.md)
    * [管理 SQL Database](chapter05/02_manage_sql_database.md)
