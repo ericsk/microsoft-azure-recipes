@@ -19,6 +19,7 @@
    * [建立虛擬機器](chapter03/01_create_virtual_machine.md)
    * [新增磁碟機到虛擬機器](chapter03/02_attach_a_new_disk.md)
    * [新增服務端點（開連接埠）](chapter03/03_create_endpoint.md)
+   * [建立高可用性的虛擬機器服務](chapter03/04_high_availability.md)
 * [儲存體服務](chapter04/README.md)
    * [建立儲存體帳號](chapter04/01_create_storage_account.md)
    * [手動上傳檔案到儲存體（BLOB）](chapter04/02_manual_upload_files_to_storage_blob.md)
