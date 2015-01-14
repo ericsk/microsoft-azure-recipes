@@ -27,7 +27,8 @@
    * [建立 SQL Database](chapter05/01_create_sql_database.md)
    * [管理 SQL Database](chapter05/02_manage_sql_database.md)
 * [行動服務]
-* [媒體服務]
+* [媒體服務](chapter07/README.md)
+   * [建立媒體服務](chapter07/01_create_media_service.md)
 * [大數據]
 * [機器學習]
 * [通訊與整合]
