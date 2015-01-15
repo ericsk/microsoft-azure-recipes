@@ -23,6 +23,7 @@
 * [儲存體服務](chapter04/README.md)
    * [建立儲存體帳號](chapter04/01_create_storage_account.md)
    * [手動上傳檔案到儲存體（BLOB）](chapter04/02_manual_upload_files_to_storage_blob.md)
+   * [上傳檔案至 BLOB 儲存體（.NET）](chapter04/03_upload_file_to_blob_storage_dotnet.md)
 * [SQL Database 服務](chapter05/README.md)
    * [建立 SQL Database](chapter05/01_create_sql_database.md)
    * [管理 SQL Database](chapter05/02_manage_sql_database.md)
