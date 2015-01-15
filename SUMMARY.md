@@ -29,6 +29,7 @@
 * [行動服務]
 * [媒體服務](chapter07/README.md)
    * [建立媒體服務](chapter07/01_create_media_service.md)
+   * [上傳影音檔案編碼及發行串流](chapter07/02_streaming_the_media_files.md)
 * [大數據]
 * [機器學習]
 * [通訊與整合]
