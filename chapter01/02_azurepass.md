@@ -8,7 +8,7 @@
 * Microsoft 帳號（也就是以前稱過的 *MSN 帳號*、*Windows Live ID*、*XBOX Live ID* 等）
 * Microsoft Azure Pass
 
-Microsoft 帳號是用來綁定 Microsoft Azure 訂閱帳戶使用，而 Microsoft Azure Pass 則是透過 Microsoft 的活動中取得。如果需要申請 Microsoft 帳號，這部份可以參考 [建立 Microsoft Azure 訂閱帳戶](chapter01/01_signup.md) 這篇文章中的說明。
+Microsoft 帳號是用來綁定 Microsoft Azure 訂閱帳戶使用，而 Microsoft Azure Pass 則是透過 Microsoft 的活動中取得。如果需要申請 Microsoft 帳號，這部份可以參考 [建立 Microsoft Azure 訂閱帳戶](01_signup.md) 這篇文章中的說明。
 
 ## 開通 Azure Pass
 
