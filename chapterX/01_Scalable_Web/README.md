@@ -4,7 +4,7 @@
 
 1. [建立網站應用程式及使用 SQL 資料庫](01_creating_web_apps_and_using_sql_database.md)
 2. [使用 Blob 儲存體及 CDN 處理靜態檔案](02_using_blob_storage_and_cdn_to_process_static_files.md)
-3. 使用 Redis Cache 加入快取
+3. 使用 Redis Cache 加入快取以及處理網站 Session
 4. 採用多重部署位置輕鬆過版測試
 5. 使用 WebJobs 及 Queue 儲存體設計非同步處理機制
 6. 資料庫的資料切割（sharding）設計
