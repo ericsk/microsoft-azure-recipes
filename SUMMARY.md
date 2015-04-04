@@ -39,3 +39,4 @@
 * [整合範例 (Put It Together)](chapterX/README.md)
 	* [高延展網站應用程式](chapterX/01_Scalable_Web/README.md)
 		* [建立網站應用程式及使用 SQL 資料庫](chapterX/01_Scalable_Web/01_creating_web_apps_and_using_sql_database.md)
+		* [使用 Blob 儲存體及 CDN 處理靜態檔案](chapterX/01_Scalable_Web/02_using_blob_storage_and_cdn_to_process_static_files.md)

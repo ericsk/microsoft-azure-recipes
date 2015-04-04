@@ -1,4 +1,4 @@
-# X-1-1 建立網站應用程式及使用 SQL 資料庫
+# X-1-1. 建立網站應用程式及使用 SQL 資料庫
 
 在開始開發及部署網站之前，得先從最基礎開始：在 Microsoft Azure 建立_Web 應用程式_以及 _SQL 資料庫_。這一篇文章除了介紹如何建立之外，也說明如何調整網站的設定。
 
@@ -83,8 +83,8 @@
 設定完成後，按下面板上方的**儲存**按鈕儲存設定。
 
 關於部署網站的部份可以參考下列文章：
-* [部署 ASP.NET 網站應用程式](../../chapter02/04_deploy_aspnet_website.md)
-* [部署 PHP 網站應用程式](../../chapter02/05_deploy_php_website.md)
-* [部署 Python 網站應用程式](../../chapter02/06_deploy_python_website.md)
-* [部署 Node.js 網站應用程式](../../chapter02/07_deploy_nodejs_website.md)
-* [部署 Java 網站應用程式](../../chapter02/08_deploy_java_website.md)
+* [2-4. 部署 ASP.NET 網站應用程式](../../chapter02/04_deploy_aspnet_website.md)
+* [2-5. 部署 PHP 網站應用程式](../../chapter02/05_deploy_php_website.md)
+* [2-6. 部署 Python 網站應用程式](../../chapter02/06_deploy_python_website.md)
+* [2-7. 部署 Node.js 網站應用程式](../../chapter02/07_deploy_nodejs_website.md)
+* [2-8. 部署 Java 網站應用程式](../../chapter02/08_deploy_java_website.md)
