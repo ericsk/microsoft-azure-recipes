@@ -39,6 +39,28 @@ Azure WEB 應用程式雖然提供了類似「本機磁碟」的檔案系統（�
   </html>
   ```
 
-這時可以將 ```/css```、```/img``` 以及 ```/js/``` 目錄下的檔案全部上傳至
+這時可以將 ```/css```、```/img``` 以及 ```/js/``` 目錄下的檔案全部上傳至 Blob 的容器中，假設容器的 URL 為 ```https://gitbooksample.blob.core.windows.net/css```、 ```https://gitbooksample.blob.core.windows.net/img``` 以及  ```https://gitbooksample.blob.core.windows.net/js```，那上面的 HTML 程式碼就可以修改成：
+
+  ```html 
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      ...
+      <link rel="stylesheet" href="//gitbooksample.blob.core.windows.net/css/site.css">
+      <link rel="stylesheet" href="//gitbooksample.blob.core.windows.net/css/index.css">
+    </head>
+    <body>
+      ...
+      <img src="//gitbooksample.blob.core.windows.net/img/hero-banner.png" alt="Hero banner" width="960" height="550">
+      ...
+      ...
+      <script src="//gitbooksample.blob.core.windows.net/js/jquery.min.js"></script>
+      <script src="//gitbooksample.blob.core.windows.net/js/index.min.js"></script>
+    </body>
+  </html>
+  ```
+
+這樣使用者的瀏覽器在瀏覽這一頁時，就會去 Blob 儲存體中抓取這些檔案，而不必都是對 WEB 應用程式發送存取要求。
 
 ## 使用 Azure CDN
