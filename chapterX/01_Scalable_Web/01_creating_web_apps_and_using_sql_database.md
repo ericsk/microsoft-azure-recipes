@@ -33,3 +33,58 @@
 最後一個步驟就是選擇要建立 Web 應用程式的資料中心，目前距離台灣最近的是 **East Asia** 的機房。
 
 ![設定 WEB 應用程式部署的資料中心](https://skgitbook.blob.core.windows.net/azurerecipestw/x-1-1-6-webapp-location.png)
+
+### 設定 SQL 資料庫
+
+完成 WEB 應用程式的設定後，接著設定資料庫，這裡可以選擇新建、或是從之前建立過的資料庫選擇。
+
+![新建或選擇之前建立的資料庫](https://skgitbook.blob.core.windows.net/azurerecipestw/x-1-1-7-config-sql-database.png)
+
+新建 SQL 資料庫時，首先設定的是**資料庫名稱**。
+
+![設定資料庫名稱](https://skgitbook.blob.core.windows.net/azurerecipestw/x-1-1-8-creating-sql-database.png)
+
+再來是選擇 **SQL 資料庫的價格區間**，關於價格、效能與功能的差異可以參考官網上的[頁面說明](http://azure.microsoft.com/zh-tw/pricing/details/sql-database/)。而建立面板上也會顯示等級的差異：
+
+![SQL 資料庫的價格方案](https://skgitbook.blob.core.windows.net/azurerecipestw/x-1-1-9-sql-database-price-plan.png)
+
+再來是設定**資料庫的定序**，關於定序的詳細說明可以參考[MSDN 上的頁面說明](https://msdn.microsoft.com/zh-tw/library/ms143726.aspx)。這裡可以留在預設的設定就好。最後是運行這個 SQL 資料庫的**伺服器設定**，主要是設定伺服器的帳號密碼，以及它所在的資料中心位置。
+
+![SQL 資料庫的伺服器設定](https://skgitbook.blob.core.windows.net/azurerecipestw/x-1-1-10-config-sql-server.png)
+
+
+設定完 WEB 應用程式以及 SQL 資料庫後，最後在挑選帳號下的訂閱帳戶，就可以按下**建立**的按鈕開始建立，你也可以勾選**新增至「開始面板」**以方便在管理後台直接進入管理。
+
+![SQL 資料庫的伺服器設定](https://skgitbook.blob.core.windows.net/azurerecipestw/x-1-1-11-create-finally.png)
+
+如果一切都沒有問題，稍待約 1 分鐘左右，就可以看到建立完成的資源群組面板了，這裡你會發現建 WEB 應用程式時也會同步建了一個 Application Insight 的服務，這個我們在稍後的文章中會提到如何使用它。
+
+![SQL 資料庫的伺服器設定](https://skgitbook.blob.core.windows.net/azurerecipestw/x-1-1-12-created-resource-group.png)
+
+
+## 部署網站及資料庫
+
+完成建立 WEB 應用程式以及資料庫後，接下來就是如何部署應用程式上來了。在開始部署之前，我們先到 WEB 應用程式的設定裡加入 SQL 資料庫的連接字串（connection string），首先在資源群組頁面中，點選建立好的 **SQL Database**，然後在 SQL 資料庫管理面板中點擊**屬性**的區塊，這時便能找到**顯示資料庫連接字串**的連結。
+
+![取得資料庫連接字串](https://skgitbook.blob.core.windows.net/azurerecipestw/x-1-1-13-show-database-connection-string.png)
+
+接著會跳出幾種連接資料庫的連接字串範例，你可以根據你 WEB 應用程式所使用的資料庫連接方式來選擇使用，但要注意的是，**這裡顯示的連接字串內 Password 的值必須自行填入**，以 ADO.NET 的連接字串為例，其中的 ```Password={your_password_here}``` 就要自行替換。
+
+![取得資料庫連接字串](https://skgitbook.blob.core.windows.net/azurerecipestw/x-1-1-14-database-connection-string.png)
+
+取得資料庫連接字串後，回到資源群組的面板，點擊 WEB 應用程式，在點選**設定**，到**應用程式屬性**面板中設定資料庫連接字串。
+
+![設定 WEB 應用程式](https://skgitbook.blob.core.windows.net/azurerecipestw/x-1-1-15-config-web-apps-settings.png)
+
+在應用程式屬性的面板中往下拉到**連接字串**的部份，將**名稱**填入 _DefaultConnection_，然後**值**的部份就貼上剛才取得的連接字串（注意：密碼要確定已經代入），後面的類型就選擇 _SQL Database_ 即可。
+
+![設定資料庫連接字串](https://skgitbook.blob.core.windows.net/azurerecipestw/x-1-1-16-setting-database-connection-string.png)
+
+設定完成後，按下面板上方的**儲存**按鈕儲存設定。
+
+關於部署網站的部份可以參考下列文章：
+* [部署 ASP.NET 網站應用程式](../../chapter02/04_deploy_aspnet_website.md)
+* [部署 PHP 網站應用程式](../../chapter02/05_deploy_php_website.md)
+* [部署 Python 網站應用程式](../../chapter02/06_deploy_python_website.md)
+* [部署 Node.js 網站應用程式](../../chapter02/07_deploy_nodejs_website.md)
+* [部署 Java 網站應用程式](../../chapter02/08_deploy_java_website.md)
