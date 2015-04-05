@@ -35,6 +35,11 @@
 
 ### ASP.NET Session State
 * [Session State Management in Windows Azure Web Roles](http://blogs.msdn.com/b/cie/archive/2013/05/17/session-state-management-in-windows-azure-web-roles.aspx)
+* [使用 Azure Redis Cache 作為 Session State Provider](https://msdn.microsoft.com/zh-tw/library/azure/dn690522.aspx)
 
 ### PHP
 * 用 Table 儲存體實作 PHP session handler：[Azure Table Session Handler](https://github.com/ericsk/azure-table-sessionhandler-for-php)
+
+
+## 參考文章
+* [Disabling ARR’s Instance Affinity in Windows Azure Web Sites](http://azure.microsoft.com/blog/2013/11/18/disabling-arrs-instance-affinity-in-windows-azure-web-sites/)
