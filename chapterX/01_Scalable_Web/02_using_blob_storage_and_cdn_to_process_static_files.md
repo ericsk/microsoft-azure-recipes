@@ -27,47 +27,47 @@ Azure WEB 應用程式雖然提供了類似「本機磁碟」的檔案系統（�
 ### 處理 CSS、JavaScript 或圖片檔等靜態檔案
 像 CSS、JavaScript 這些網站部署前就存在的靜態檔案，可以在網站部署時，同時將這些檔案上傳至 Azure 儲存體的 Blob 容器中，接著取得 URL 替換掉原本的存取路徑，比方說原本的 HTML 檔案內容可能像是這樣：
 
-  ```html 
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="UTF-8">
-      ...
-      <link rel="stylesheet" href="/css/site.css">
-      <link rel="stylesheet" href="/css/index.css">
-    </head>
-    <body>
-      ...
-      <img src="/img/hero-banner.png" alt="Hero banner" width="960" height="550">
-      ...
-      ...
-      <script src="/js/jquery.min.js"></script>
-      <script src="/js/index.min.js"></script>
-    </body>
-  </html>
-  ```
+```html 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    ...
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+  <body>
+    ...
+    <img src="/img/hero-banner.png" alt="Hero banner" width="960" height="550">
+    ...
+    ...
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/index.min.js"></script>
+  </body>
+</html>
+```
 
 這時可以將 ```/css```、```/img``` 以及 ```/js/``` 目錄下的檔案全部上傳至 Blob 的容器中（上傳檔案的部份可以參考 [4-2. 手動上傳檔案到儲存體（BLOB）](../../chapter04/02_manual_upload_files_to_storage_blob.md) 一文），假設容器的 URL 為 ```https://gitbooksample.blob.core.windows.net/css```、 ```https://gitbooksample.blob.core.windows.net/img``` 以及  ```https://gitbooksample.blob.core.windows.net/js```，那上面的 HTML 程式碼就可以將 CSS、JavaScript 以及圖片檔案的路徑修改成：
 
-  ```html 
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="UTF-8">
-      ...
-      <link rel="stylesheet" href="//gitbooksample.blob.core.windows.net/css/site.css">
-      <link rel="stylesheet" href="//gitbooksample.blob.core.windows.net/css/index.css">
-    </head>
-    <body>
-      ...
-      <img src="//gitbooksample.blob.core.windows.net/img/hero-banner.png" alt="Hero banner" width="960" height="550">
-      ...
-      ...
-      <script src="//gitbooksample.blob.core.windows.net/js/jquery.min.js"></script>
-      <script src="//gitbooksample.blob.core.windows.net/js/index.min.js"></script>
-    </body>
-  </html>
-  ```
+```html 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    ...
+    <link rel="stylesheet" href="//gitbooksample.blob.core.windows.net/css/site.css">
+    <link rel="stylesheet" href="//gitbooksample.blob.core.windows.net/css/index.css">
+  </head>
+  <body>
+    ...
+    <img src="//gitbooksample.blob.core.windows.net/img/hero-banner.png" alt="Hero banner" width="960" height="550">
+    ...
+    ...
+    <script src="//gitbooksample.blob.core.windows.net/js/jquery.min.js"></script>
+    <script src="//gitbooksample.blob.core.windows.net/js/index.min.js"></script>
+  </body>
+</html>
+```
 
 這樣使用者的瀏覽器在瀏覽這一頁時，就會去 Blob 儲存體中抓取這些檔案，而不必都是對 WEB 應用程式發送存取要求。
 
@@ -91,25 +91,25 @@ Azure WEB 應用程式雖然提供了類似「本機磁碟」的檔案系統（�
 
 而這個端點位址的功用就是可以替換 Blob 儲存體中每個 Blob URL 的網域名稱（維持相同的路徑名），這樣就不是直接從資料中心拉資料，而是從 Azure CDN 的節點來存取了。舉例來說，上述的 HTML 檔案在使用 Azure CDN 來快取 Blob 儲存體的話，就可以修改為：
 
-  ```html 
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="UTF-8">
-      ...
-      <link rel="stylesheet" href="//az743383.vo.msecnd.net/css/site.css">
-      <link rel="stylesheet" href="//az743383.vo.msecnd.net/css/index.css">
-    </head>
-    <body>
-      ...
-      <img src="//az743383.vo.msecnd.net/img/hero-banner.png" alt="Hero banner" width="960" height="550">
-      ...
-      ...
-      <script src="//az743383.vo.msecnd.net/js/jquery.min.js"></script>
-      <script src="//az743383.vo.msecnd.net/js/index.min.js"></script>
-    </body>
-  </html>
-  ```
+```html 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    ...
+    <link rel="stylesheet" href="//az743383.vo.msecnd.net/css/site.css">
+    <link rel="stylesheet" href="//az743383.vo.msecnd.net/css/index.css">
+  </head>
+  <body>
+    ...
+    <img src="//az743383.vo.msecnd.net/img/hero-banner.png" alt="Hero banner" width="960" height="550">
+    ...
+    ...
+    <script src="//az743383.vo.msecnd.net/js/jquery.min.js"></script>
+    <script src="//az743383.vo.msecnd.net/js/index.min.js"></script>
+  </body>
+</html>
+```
 
 來讓瀏覽器對 Azure CDN 拉資料而不是從資料中心來存取。
 
