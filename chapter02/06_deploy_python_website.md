@@ -1,10 +1,10 @@
 # 2.6 部署 Python 網站應用程式
 
-Microsoft Azure 網站服務目前支援以 WFastCGI 的方式運行 Python 2.7 及 Python 3.4 的執行環境，這篇文章以 [django](https://skgitbook.blob.core.windows.net/azurerecipestw/3-1-7-vm-is-running.png) 開發框架做為部署的示範。
+Azure App Service - Web 應用程式目前支援以 WFastCGI 的方式運行 Python 2.7 及 Python 3.4 的執行環境，這篇文章以 [django](https://skgitbook.blob.core.windows.net/azurerecipestw/3-1-7-vm-is-running.png) 開發框架做為部署的示範。
 
 ## 事前準備
 * 擁有 Microsoft Azure 訂閱帳戶，若沒有可以參考 [1.1 建立 Microsoft Azure 訂閱帳戶](../chapter01/01_signup.md)建立。
-* 瞭解如何建立網站服務，可參考 [2.1 建立 Microsoft Azure 網站實體](01_create_a_website.md)。
+* 瞭解如何建立網站服務，可參考 [2.1 建立 Azure App Service - Web 應用程式實體](01_create_a_website.md)。
 * 熟悉 Python 程式語言。
 * （選擇性）瞭解 django 開發框架。
 

@@ -1,12 +1,12 @@
 # 2.7 部署 Node.js 網站應用程式
 
-Microsoft Azure 網站服務上的 IIS 環境已經佈建好 [iisnode](https://github.com/Azure/iisnode) 的環境，所以可以直接執行 Node.js 寫成的程式，目前預設支援的 Node.js 版本為 _0.10.32_。
+Azure App Service - Web 應用程式上的 IIS 環境已經佈建好 [iisnode](https://github.com/Azure/iisnode) 的環境，所以可以直接執行 Node.js 寫成的程式，目前預設支援的 Node.js 版本為 _0.10.32_。
 
 這篇文章將會示範如何將 Node.js 的應用程式部署到 Microsoft Azure 網站服務。
 
 ## 事前準備
 * 擁有 Microsoft Azure 訂閱帳戶，若沒有可以參考 [1.1 建立 Microsoft Azure 訂閱帳戶](../chapter01/01_signup.md)建立。
-* 瞭解如何建立網站服務，可參考 [2.1 建立 Microsoft Azure 網站實體](01_create_a_website.md)。
+* 瞭解如何建立網站服務，可參考 [2.1 建立 Azure App Service - Web 應用程式](01_create_a_website.md)。
 * 熟悉 Node.js 程式語言及相關開發技術。
 * （選擇性）瞭解 Express 開發框架。
 

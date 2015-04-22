@@ -1,11 +1,11 @@
 # 2.8 部署 Java 網站應用程式
 
-2014 年 4 月開始 Microsoft Azure 網站應用程式加入了 Java 的支援，目前使用 Java 7 的環境，搭配的 Web 容器則是 Tomcat 7 
+2014 年 4 月開始 App Service - Web 應用程式加入了 Java 的支援，目前使用 Java 7 的環境，搭配的 Web 容器則是 Tomcat 7 
 
 ## 事前準備
 
 * 擁有 Microsoft Azure 訂閱帳戶。
-* 會建立網站服務，可參考 [2.1 建立 Microsoft Azure 網站服務](chapter02/01_create_a_website.md)一文。
+* 會建立網站服務，可參考 [2.1 建立 App Service - Web 應用程式](chapter02/01_create_a_website.md)一文。
 * 使用 Java 開發網站應用程式（基於 Tomcat 及 Jetty）。
 
 ## 如何操作

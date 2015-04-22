@@ -1,12 +1,12 @@
 # 2.2 設定部署驗證
 
-在 Microsoft Azure 網站服務上，除了常用於 ASP.NET 專案的 Web Deploy 部署之外，同時也支援了許多其它部署方式，像是 FTP、Visual Studio Online、Git、GitHub、Dropbox 等，而在使用 **FTP 及 Git** 部署方式時，都會需要一組帳號密碼做身份驗證，**這組身份驗證的帳號密碼與 Microsoft 帳號是分開來的**，所以若想要使用這些方式部署網站，就要先設定部署驗證。
+在 Azure App Service - Web 應用程式上，除了常用於 ASP.NET 專案的 Web Deploy 部署之外，同時也支援了許多其它部署方式，像是 FTP、Visual Studio Online、Git、GitHub、Dropbox 等，而在使用 **FTP 及 Git** 部署方式時，都會需要一組帳號密碼做身份驗證，**這組身份驗證的帳號密碼與 Microsoft 帳號是分開來的**，所以若想要使用這些方式部署網站，就要先設定部署驗證。
 
 在同一個 Azure 訂閱帳戶下，部署認證都是用**同一組帳號密碼**，而如果使用 FTP 部署網站時，不同的網站之間會在帳號前加上前綴詞（網站的名稱）來作區別，在部署網站時，一定要注意身份驗證時輸入的帳號及密碼為何。
 
 ## 事前準備
 
-要完成這篇文章的操作，首先必須在 Microsoft Azure 網站服務上建立至少一個網站實體。建立網站實體的方式可以參考 [2.1 建立 Microsoft Azure 網站實體](01_create_a_website.md)這篇文章。
+要完成這篇文章的操作，首先必須在 Azure App Service - Web 應用程式上建立至少一個網站實體。建立網站實體的方式可以參考 [2.1 建立 Microsoft Azure 網站實體](01_create_a_website.md)這篇文章。
 
 ## 如何操作
 

@@ -1,10 +1,10 @@
 # 2.5 部署 PHP 網站應用程式
 
-Microsoft Azure 網站服務目前直接支援 PHP 5.3, 5.4 及 5.5 的執行環境，也可以部署想要使用的 PHP 版本，只要直接把 PHP 網站應用程式的檔案部署到網站空間，幾乎不用調整設定（詳見_注意事項_）就可以直接運行。
+Azure App Service - Web 應用程式目前直接支援 PHP 5.3, 5.4 及 5.5 的執行環境，也可以部署想要使用的 PHP 版本，只要直接把 PHP 網站應用程式的檔案部署到網站空間，幾乎不用調整設定（詳見_注意事項_）就可以直接運行。
 
 ## 事前準備
 * 擁有 Microsoft Azure 訂閱帳戶。
-* 瞭解如何建立Microsoft Azure 網站服務。
+* 瞭解如何建立 Azure App Service - Web 應用程式。
 * 瞭解 PHP 開發。
 
 ## 部署 PHP 網站應用程式
@@ -46,7 +46,7 @@ Microsoft Azure 網站服務目前直接支援 PHP 5.3, 5.4 及 5.5 的執行環
 
 ## 使用 PHP 擴充套件（PHP Extensions）
 
-撰寫網站應用程式時，除了 Microsoft Azure 網站服務本來就準備好的 PHP 執行環境、預先編譯好的擴充套件之外，碰到某些狀況可能會想要自行開發或是使用別人已經開發好的 PHP 擴充套件（PHP Extensions），例如要使用 Memcache 作快取時，很多人會使用 [PECL](http://pecl.php.net/) 上的這個 [memcache 擴充套件](http://pecl.php.net/package/memcache)。想要使用 PHP 擴充套件，只要在 Microsoft Azure 網站服務的後台做一些調整就可以了。以下就以 memcache extension 作為示範：
+撰寫網站應用程式時，除了 Azure App Service - Web 應用程式本來就準備好的 PHP 執行環境、預先編譯好的擴充套件之外，碰到某些狀況可能會想要自行開發或是使用別人已經開發好的 PHP 擴充套件（PHP Extensions），例如要使用 Memcache 作快取時，很多人會使用 [PECL](http://pecl.php.net/) 上的這個 [memcache 擴充套件](http://pecl.php.net/package/memcache)。想要使用 PHP 擴充套件，只要在 Microsoft Azure 網站服務的後台做一些調整就可以了。以下就以 memcache extension 作為示範：
 
   1. 在取得 PHP 擴充套件時要特別注意，因為 Microsoft Azure 網站服務是以 Windows Server 及 IIS 為基礎，所以**要使用的 PHP 擴充套件必須要是編譯為 Windows 的版本**（也就是 .dll 檔案），目前 Microsoft Azure 網站服務能正確執行的是透過 VC9（Visual C++ 2008）編譯的版本（並且是 non thread safe），至於要使用 32-bit 或是 64-bit 的版本、PHP 的版本，也要看你的網站服務設定使用哪一個環境。
 
@@ -65,7 +65,7 @@ Microsoft Azure 網站服務目前直接支援 PHP 5.3, 5.4 及 5.5 的執行環
 雖然 Microsoft Azure 上已經準備好了 PHP 的執行環境（也預先編譯好了一些模組），但如果覺得不敷使用，想要使用自己編譯或是從 PHP 官網上下載的新版本 PHP 直譯器（例如此刻尚未支援的 PHP 5.6），只要注意幾個事項，設定正確也可以在 Microsoft Azure 上使用自訂環境。
 
   * 若要自行下載 PHP 的原始碼編譯，要編譯成用 FastCGI 方式執行，並且目標版本是 **VC9**（Visual C++ 2008）以及 Non-Thread-Safe 的設定。
-  * 若是使用 PHP 官方編譯好的版本，可以到[這個網站](http://windows.php.net/download/)來下載，同樣地，要注意是使用 VC9 編譯、Non-Thread-Safe (NTS) 的版本，當然也要注意下載的是 32 位元 (x86) 還是 64 位元 (x64) 的版本，這樣在 Microsoft Azure 網站服務上的設定也要跟著調整。
+  * 若是使用 PHP 官方編譯好的版本，可以到[這個網站](http://windows.php.net/download/)來下載，同樣地，要注意是使用 VC9 編譯、Non-Thread-Safe (NTS) 的版本，當然也要注意下載的是 32 位元 (x86) 還是 64 位元 (x64) 的版本，這樣在 Azure App Service - Web 應用程式上的設定也要跟著調整。
   
 接著，把編好或下載後解壓縮的 PHP 直譯器套件（包含 php-cgi.exe, libXXX.dll 等）全部放在應用程式中的一個目錄，例如放在 **bin\\php** 目錄下，然後再回到網站管理後台的**設定**頁面，指定所有的 PHP 頁面改由這份新的 PHP 直譯器來執行，所以在**處理常式對應**區加一行設定如下（注意這裡要設定絕對路徑）：	
 
@@ -77,5 +77,5 @@ Microsoft Azure 網站服務目前直接支援 PHP 5.3, 5.4 及 5.5 的執行環
 
 ## 注意事項
 
-* 現在在 Microsoft Azure 網站服務中，底層是 Windows Server 及 IIS 為基礎的環境，所以在程式寫作時要注意一些系統慣例的不同，像是檔案路徑的分隔線，因為在 Unix/Linux 下是以 **/** 為分隔，而 Windows 是以 **\\** 為分隔，遇到這個狀況，最好使用 PHP 中的 ```DIRECTORY_SEPARATOR``` 常數來處理。
+* 現在在 Azure App Service - Web 應用程式中，底層是 Windows Server 及 IIS 為基礎的環境，所以在程式寫作時要注意一些系統慣例的不同，像是檔案路徑的分隔線，因為在 Unix/Linux 下是以 **/** 為分隔，而 Windows 是以 **\\** 為分隔，遇到這個狀況，最好使用 PHP 中的 ```DIRECTORY_SEPARATOR``` 常數來處理。
 * 如果要調整 **php.ini** 的一些設定，由於 PHP 5.3 以後就支援獨立的設定檔，只要在應用程式的根目錄下加入一個 **.user.ini** 檔案，把設定填寫在其中就可以改變一些設定（像是上傳檔案的大小等）。

@@ -4,7 +4,7 @@
 
 ## 事前準備
 
-在開始之前，要先在 Microsoft Azure 網站服務建立網站，建立網站實體的方式可以參考 [2.1 建立 Microsoft Azure 網站實體](01_create_a_website.md)這篇文章。
+在開始之前，要先在 Azure App Service - Web 應用程式建立網站，建立網站實體的方式可以參考 [2.1 建立 Azure App Service - Web 應用程式實體](01_create_a_website.md)這篇文章。
 
 另一方面，也要先設定好部署認證，設定的方式可以參考 [2.2 設定部署驗證](02_configure_authentication.md)這篇文章。
 
@@ -12,7 +12,7 @@
 
 ### 設定網站根目錄
 
-部署靜態檔案到 Microsoft Azure 網站服務，首先要知道網站的根目錄是哪一個，這個設定在管理後台中可以看到，打開網站的管理頁面，在**設定**的頁籤，拉到最下面看到虛擬應用程式和目錄:
+部署靜態檔案到 Azure App Service - Web 應用程式，首先要知道網站的根目錄是哪一個，這個設定在管理後台中可以看到，打開網站的管理頁面，在**設定**的頁籤，拉到最下面看到虛擬應用程式和目錄:
 
 ![設定頁](http://i.imgur.com/OFDsQCH.png)
 

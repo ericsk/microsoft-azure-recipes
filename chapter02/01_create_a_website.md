@@ -1,4 +1,4 @@
-# 2.1 建立 Microsoft Azure 網站實體
+# 2.1 建立 Azure App Service - Web 應用程式實體
 
 若要把網站應用程式放在 Microsoft Azure 上運作，首先要建立一個網站的實體（instance），再把網站應用程式部署上來運作。這篇文章將介紹如何使用管理後台建立網站服務。
 
@@ -31,5 +31,5 @@
 
 ## 注意事項
 
-* 透過這種方式建立的網站實體，預設是採用**免費**的價格方案，關於 Microsoft Azure 網站服務的價格方案，請參考[官網上的頁面](http://azure.microsoft.com/zh-tw/pricing/details/websites/ "Microsoft Azure 網站服務定價機制")。
+* 透過這種方式建立的網站實體，預設是採用**免費**的價格方案，關於 Azure App Service - Web 應用程式的價格方案，請參考[官網上的頁面](http://azure.microsoft.com/zh-tw/pricing/details/websites/ "Microsoft Azure 網站服務定價機制")。
 * 不同的網站可以建立不同的網站實體來運作。
