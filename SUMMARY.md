@@ -15,6 +15,7 @@
    * [部署 Python 網站應用程式](chapter02/06_deploy_python_website.md)
    * [部署 Node.js 網站應用程式](chapter02/07_deploy_nodejs_website.md)
    * [部署 Java 網站應用程式](chapter02/08_deploy_java_website.md)
+   * [自訂網域名稱](chapter02/09_configure_custom_domain.md)
 * [虛擬機器服務](chapter03/README.md)
    * [建立虛擬機器](chapter03/01_create_virtual_machine.md)
    * [新增磁碟機到虛擬機器](chapter03/02_attach_a_new_disk.md)
@@ -33,9 +34,6 @@
 * [媒體服務](chapter07/README.md)
    * [建立媒體服務](chapter07/01_create_media_service.md)
    * [上傳影音檔案編碼及發行串流](chapter07/02_streaming_the_media_files.md)
-* [大數據]
-* [機器學習]
-* [通訊與整合]
 * [整合範例 (Put It Together)](chapterX/README.md)
 	* [高延展網站應用程式](chapterX/01_Scalable_Web/README.md)
 		* [建立網站應用程式及使用 SQL 資料庫](chapterX/01_Scalable_Web/01_creating_web_apps_and_using_sql_database.md)
