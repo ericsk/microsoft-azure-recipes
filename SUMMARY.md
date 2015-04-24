@@ -16,6 +16,7 @@
    * [部署 Node.js 網站應用程式](chapter02/07_deploy_nodejs_website.md)
    * [部署 Java 網站應用程式](chapter02/08_deploy_java_website.md)
    * [自訂網域名稱](chapter02/09_configure_custom_domain.md)
+   * [不停機部署及過版新網站](chapter02/10_deploy_websites_using_deployment_slots.md)
 * [虛擬機器服務](chapter03/README.md)
    * [建立虛擬機器](chapter03/01_create_virtual_machine.md)
    * [新增磁碟機到虛擬機器](chapter03/02_attach_a_new_disk.md)
