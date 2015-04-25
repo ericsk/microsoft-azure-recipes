@@ -23,7 +23,7 @@
    * [新增服務端點（開連接埠）](chapter03/03_create_endpoint.md)
    * [建立高可用性（HA）的虛擬機器服務](chapter03/04_high_availability.md)
    * [建立負載平衡（Load Balanced）的服務端點](chapter03/05_load_balanced.md)
- * [儲存體服務](chapter04/README.md)
+* [儲存體服務](chapter04/README.md)
    * [建立儲存體帳號](chapter04/01_create_storage_account.md)
    * [手動上傳檔案到儲存體（BLOB）](chapter04/02_manual_upload_files_to_storage_blob.md)
    * [上傳檔案至 BLOB 儲存體（.NET）](chapter04/03_upload_file_to_blob_storage_dotnet.md)
