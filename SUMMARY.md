@@ -37,7 +37,7 @@
    * [上傳影音檔案編碼及發行串流](chapter07/02_streaming_the_media_files.md)
 * [Azure IoT 服務（Azure IoT Suite）](chapter08/README.md)
    * [從 IoT 裝置中蒐集大量的資料](chapter08/01_collect_data_from_iot_devices.md)
-   * 即時分析輸入的大量資料
+   * [即時分析輸入的大量資料](chapter08/02_realtime_data_analysis.md)
    * 處理巨量資料
    * 使用機器學習服務建立智慧模型
    * 將訊息推播至 IoT 裝置

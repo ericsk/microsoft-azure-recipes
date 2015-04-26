@@ -5,7 +5,7 @@
 這一部份將會介紹下列功能及服務：
 
   1. [從 IoT 裝置中蒐集大量的資料](01_collect_data_from_iot_devices.md)
-  2. 即時分析輸入的大量資料
+  2. [即時分析輸入的大量資料](02_realtime_data_analysis.md)
   3. 處理巨量資料
   4. 使用機器學習服務建立智慧模型
   5. 將訊息推播至 IoT 裝置
