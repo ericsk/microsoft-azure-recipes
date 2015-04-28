@@ -6,6 +6,6 @@
 
   1. [從 IoT 裝置中蒐集大量的資料](01_collect_data_from_iot_devices.md)
   2. [即時分析輸入的大量資料](02_realtime_data_analysis.md)
-  3. 處理巨量資料
+  3. [使用 Azure HDInsight 處理巨量資料](03_manipulate_big_data_using_azure_hdinsight.md)
   4. 使用機器學習服務建立智慧模型
   5. 將訊息推播至 IoT 裝置
