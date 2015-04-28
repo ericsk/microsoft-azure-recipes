@@ -12,8 +12,27 @@ Azure HDInsight 是 Microsoft Azure 與 Horton Networks 公司合作將 [Apache 
 
 ![建立 Azure HDInsight](https://skgitbook.blob.core.windows.net/azurerecipestw/8-3-2-creating-azure-hdinsight.png)
 
+	上述的步驟是建立以 Windows Server 為基礎的 Hadoop 環境，您也可以選擇「LINUX 上的 HADOOP」來建立以 (Ubuntu) Linux 為基礎的 Hadoop 環境。
 
-## 使用 Hive 查詢語法建立資料表
+根據選擇的叢集大小需要一點時間建立服務，建立完成後，就可以直接將需要 Hadoop 執行的工作丟上這個服務上執行（Windows Server 為基礎的 Hadoop 用 PowerShell 來遞交工作；Linux 為基礎的 Hadoop 則用 SSH 來遞交）。
+
+![基於 Windows Server 的 Azure HDInsight](https://skgitbook.blob.core.windows.net/azurerecipestw/8-3-3-hadoop-on-windows-server.png)
+_基於 Windows Server 的 Hadoop 環境操作介紹_
+
+
+
+
+## 使用 Web Console 操作 Azure HDInsight
+
+Microsoft Azure 也為 HDInsight 的服務建立了 Web 操作介面（Web Console），方便使用者透過網頁的方式來操作 Hadoop。只要在管理後台，點選服務，都可以在下方的工作列找到 **Web 主控台** 的按鈕（或是直接連結 _https://[名稱].azurehdinsight.net/_）進入
+
+![基於 Windows Server 的 Azure HDInsight](https://skgitbook.blob.core.windows.net/azurerecipestw/8-3-5-web-console-button.png)
+
+輸入帳號（_admin_）及設定的密碼後，就會進入 Web 主控台的介面，可以在左下角切換成正體中文介面。
+
+![Azure HDInsight 的 Web 主控台](https://skgitbook.blob.core.windows.net/azurerecipestw/8-3-6-azure-hdinsight-web-console.png)
+
+有了這樣的介面，你就可以透過網頁來進行範例的練習、執行 Hive 查詢、查看工作記錄、以及瀏覽跟 Azure HDInsight 對應的儲存體內資料。
 
 ## 參考資料
 
