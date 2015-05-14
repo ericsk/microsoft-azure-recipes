@@ -4,8 +4,8 @@
 
 ## 事前準備
 
-* 已經建立好 Azure 媒體服務的空間，可參考 [7.1 建立媒體服務](chapter07/01_create_media_service.md)的說明來建立。
-* （選擇性）瞭解 Azure 儲存體服務，並且熟悉上傳檔案至 Blob 儲存體，可參考  [4.2 手動上傳檔案到儲存體（BLOB）](chapter04/02_manual_upload_files_to_storage_blob.md)的說明。
+* 已經建立好 Azure 媒體服務的空間，可參考 [7.1 建立媒體服務](01_create_media_service.md)的說明來建立。
+* （選擇性）瞭解 Azure 儲存體服務，並且熟悉上傳檔案至 Blob 儲存體，可參考  [4.2 手動上傳檔案到儲存體（BLOB）](../chapter04/02_manual_upload_files_to_storage_blob.md)的說明。
 
 ## 如何操作
 
