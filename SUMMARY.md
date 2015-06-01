@@ -30,7 +30,6 @@
 * [SQL Database 服務](chapter05/README.md)
    * [建立 SQL Database](chapter05/01_create_sql_database.md)
    * [管理 SQL Database](chapter05/02_manage_sql_database.md)
-
 * [行動服務](chapter06/README.md)
    * [建立行動服務](chapter06/01_create_mobile_service.md)
 
