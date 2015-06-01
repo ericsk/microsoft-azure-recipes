@@ -37,6 +37,7 @@
 * [媒體服務](chapter07/README.md)
    * [建立媒體服務](chapter07/01_create_media_service.md)
    * [上傳影音檔案編碼及發行串流](chapter07/02_streaming_the_media_files.md)
+
 * [Azure IoT 服務（Azure IoT Suite）](chapter08/README.md)
    * [從 IoT 裝置中蒐集大量的資料](chapter08/01_collect_data_from_iot_devices.md)
    * [即時分析輸入的大量資料](chapter08/02_realtime_data_analysis.md)
