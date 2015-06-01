@@ -41,7 +41,6 @@
    * [使用 Azure HDInsight 處理巨量資料](chapter08/03_manipulate_big_data_using_azure_hdinsight.md)
    * 使用機器學習服務建立智慧模型
    * 將訊息推播至 IoT 裝置
-
 * [管理及維運](chapter09/README.md)
 
 * [整合範例 (Put It Together)](chapterX/README.md)
