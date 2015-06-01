@@ -33,7 +33,8 @@
    * [建立 SQL Database](chapter05/01_create_sql_database.md)
    * [管理 SQL Database](chapter05/02_manage_sql_database.md)
 * [行動服務](chapter06/README.md)
-   * [建立行動服務](chapter06/01_create_mobile_service.md) 
+   * [建立行動服務](chapter06/01_create_mobile_service.md)
+
 * [媒體服務](chapter07/README.md)
    * [建立媒體服務](chapter07/01_create_media_service.md)
    * [上傳影音檔案編碼及發行串流](chapter07/02_streaming_the_media_files.md)
