@@ -4,7 +4,7 @@
 
 ## 事前準備
 
-* Microsoft Azure 儲存體帳號，可參考 [4.1 建立儲存體帳號](01_create_storage_account.md)來建立。
+* Microsoft Azure 儲存體帳號，可參考 [4.1 建立儲存體帳號](01_create_storage_account.md) 這篇文章來建立。
 * (選擇性) 安裝免費且開源的 [Azure Storage Explorer](https://azurestorageexplorer.codeplex.com/) 工具，這篇文章會以此工具作為示範。
 
 ## 如何操作
