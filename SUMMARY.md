@@ -6,6 +6,7 @@
    * [使用 Microsoft Azure Pass 啟用 Microsoft Azure 訂閱帳號](chapter01/02_azurepass.md)
    * [將試用帳戶或 Azure Pass 轉成正式帳號](chapter01/03_migrate_subscription.md)
    * [檢視帳單](chapter01/04_view_the_bill.md)
+
 * [App Service - Web 應用程式](chapter02/README.md)
    * [建立 Azure App Service - Web 應用程式實體](chapter02/01_create_a_website.md)
    * [設定部署驗證](chapter02/02_configure_authentication.md)
@@ -17,6 +18,7 @@
    * [部署 Java 網站應用程式](chapter02/08_deploy_java_website.md)
    * [自訂網域名稱](chapter02/09_configure_custom_domain.md)
    * [不停機部署及過版新網站](chapter02/10_deploy_websites_using_deployment_slots.md)
+
 * [虛擬機器服務](chapter03/README.md)
    * [建立虛擬機器](chapter03/01_create_virtual_machine.md)
    * [新增磁碟機到虛擬機器](chapter03/02_attach_a_new_disk.md)
