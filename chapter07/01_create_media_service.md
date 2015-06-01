@@ -4,7 +4,7 @@
 
 ## 事前準備
 
-* 已開通 Microsoft Azure 訂閱，可參考 [1.1 建立 Microsoft Azure 訂閱帳戶](chapter01/01_signup.md)來建立。
+* 已開通 Microsoft Azure 訂閱，可參考 [1.1 建立 Microsoft Azure 訂閱帳戶](../chapter01/01_signup.md)來建立。
 * 瞭解 Azure 儲存體服務。
 
 ## 如何操作
