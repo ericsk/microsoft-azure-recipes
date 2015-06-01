@@ -42,7 +42,6 @@
    * 使用機器學習服務建立智慧模型
    * 將訊息推播至 IoT 裝置
 * [管理及維運](chapter09/README.md)
-
 * [整合範例 (Put It Together)](chapterX/README.md)
 	* [高延展網站應用程式](chapterX/01_Scalable_Web/README.md)
 		* [建立網站應用程式及使用 SQL 資料庫](chapterX/01_Scalable_Web/01_creating_web_apps_and_using_sql_database.md)
