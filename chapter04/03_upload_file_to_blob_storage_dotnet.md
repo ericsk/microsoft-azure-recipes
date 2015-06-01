@@ -4,7 +4,7 @@
 
 ## 事前準備
 
-* 建立 Azure 儲存體帳戶，可參考 [4.1 建立儲存體帳號](chapter04/01_create_storage_account.md)建立。
+* 建立 Azure 儲存體帳戶，可參考 [4.1 建立儲存體帳號](01_create_storage_account.md)建立。
 
 ## 如何上傳
 
