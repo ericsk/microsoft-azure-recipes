@@ -13,7 +13,7 @@
 
 ![開啟 Azure Storage Explorer](https://skgitbook.blob.core.windows.net/azurerecipestw/4-2-1-azure-storage-explorer.png)
 
-接下來會要求輸入儲存體帳號的資料，主要有兩個欄位要填寫：_Storage account name_ 是填寫儲存體帳號的名稱，而 _Storage account key_ 則是填寫存取金鑰（如果不知道在哪裡查詢這些資料，可以參考 [4.1 建立儲存體帳號](chapter04/01_create_storage_account.md)的內容）；而下方的 **Use HTTPS** 建議勾選起來，而在輸入完成後，可以先按一下 **Test Access** 的按鈕來確認是否連線成功，若確定沒有問題，則可以按下 **Save** 按鈕儲存設定。
+接下來會要求輸入儲存體帳號的資料，主要有兩個欄位要填寫：_Storage account name_ 是填寫儲存體帳號的名稱，而 _Storage account key_ 則是填寫存取金鑰（如果不知道在哪裡查詢這些資料，可以參考 [4.1 建立儲存體帳號](01_create_storage_account.md)的內容）；而下方的 **Use HTTPS** 建議勾選起來，而在輸入完成後，可以先按一下 **Test Access** 的按鈕來確認是否連線成功，若確定沒有問題，則可以按下 **Save** 按鈕儲存設定。
 
 ![新增 Azure 儲存體帳號](https://skgitbook.blob.core.windows.net/azurerecipestw/4-2-2-setup-azure-storage-account.png)
 
