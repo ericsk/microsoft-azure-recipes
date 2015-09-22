@@ -2,7 +2,7 @@
 
 0. [Microsoft Azure 食譜](README.md)
 1. 帳號、帳單及尋求協助
-  * 線上註冊 Microsoft Azure 訂閱帳號
+  * [線上註冊 Microsoft Azure 訂閱帳號](ch01/signup_azure_subscription_online.md)
   * 啟用 MSDN/BizSpark 的 Microsoft Azure 優惠
   * 停用訂閱帳號
   * 下載 Microsoft Azure 訂閱帳號的帳單
