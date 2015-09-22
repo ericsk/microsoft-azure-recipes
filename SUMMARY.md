@@ -10,6 +10,7 @@
   * 尋求帳務協助支援
 2. 架設網站及網站應用程式
   * [架設靜態網站](ch02/create_a_static_website.md)
+  * [架設 WordPress 部落格網站](ch02/create_wordpress_website.md)
 3. 虛擬機器管理
 4. 資料庫及資料儲存平台
 5. 資料分析平台
