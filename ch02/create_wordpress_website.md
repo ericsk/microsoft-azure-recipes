@@ -25,3 +25,29 @@ _**圖 1**_. 從市集建立服務
 ![在 Marketplace 中搜尋 WordPress](https://skgitbook.blob.core.windows.net/azurerecipestw/ch02/marketplace_search_wordpress.png)
 
 _**圖 2**_. 搜尋 WordPress
+
+點選由 WordPress 提供的 WordPress 後按下建立，因為這個範本是使用 Azure 應用程式服務來建立，所以也要設定像是名稱、價格方案、資源群組等相關欄位：
+
+![設定應用程式服務來架設 WordPress](https://skgitbook.blob.core.windows.net/azurerecipestw/ch02/creating_wordpress_host.png)
+
+_**圖 3**_. 設定應用程式服務來架設 WordPress
+
+大部份的設定欄位可以參考「[架設靜態網站](create_a_static_website.md)」這篇文章的內容介紹，而這裡不同的部份是，因為 WordPress 使用 PHP + MySQL，Azure Web 應用程式本身就支援 PHP 沒有問題，但 MySQL 的部份就要使用 Azure 合作夥伴 ClearDB 提供的服務，而這裡的建立面板就可以直接設定資料庫所在的位置，以及要使用的方案：
+
+![設定 MySQL 的地區及價格](https://skgitbook.blob.core.windows.net/azurerecipestw/ch02/setting_mysql_plan.png)
+
+_**圖 4**_. 設定 MySQL 的地區及價格
+
+一切設定完成後（別忘了都要按下下方的 **選取** 按鈕確定設定無誤），因為有用到合作夥伴（ClearDB）的服務，所以要確認一下使用條款，點進去看完條款聲明後按下確認即可。
+
+![接受 ClearDB 的法律條款](https://skgitbook.blob.core.windows.net/azurerecipestw/ch02/accept_cleardb_terms.png)
+
+_**圖 5**_. 接受 ClearDB 的法律條款
+
+最後按下 **建立** 的按鈕即可開始部署 WordPress 的服務。
+
+### 設定 WordPress 服務
+
+
+
+
