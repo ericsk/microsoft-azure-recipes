@@ -23,3 +23,5 @@ _**圖 1**_. 從市集建立服務
 在市集的搜尋欄位中，搜尋 WordPress 關鍵字，這裡會看到有許多不同版本或社群修改過的 WordPress，如果沒有特定需求，可以先選擇一般的 **WordPress** 就好。
 
 ![在 Marketplace 中搜尋 WordPress](https://skgitbook.blob.core.windows.net/azurerecipestw/ch02/marketplace_search_wordpress.png)
+
+_**圖 2**_. 搜尋 WordPress
