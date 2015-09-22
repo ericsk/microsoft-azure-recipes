@@ -48,6 +48,30 @@ _**圖 5**_. 接受 ClearDB 的法律條款
 
 ### 設定 WordPress 服務
 
+直接開啟網址，就會進入第一次安裝設定 WordPress 的畫面，順著它的步驟把 WordPress 設定起來。
+
+![設定安裝 WordPress](https://skgitbook.blob.core.windows.net/azurerecipestw/ch02/setup_wordpress.png)
+
+_**圖 6**_. 設定安裝 WordPress
+
+如果覺得網站執行速度不是很理想的話，可以回到 Azure 管理後台，然後在這個部落格的網站管理中，調整方案來調整網站的運算資源。
+
+![調整售價方案](https://skgitbook.blob.core.windows.net/azurerecipestw/ch02/scaling_blog.png)
+
+_**圖 7**_. 調整售價方案
 
 
+### 管理 MySQL 資料庫
+
+在（預覽版）管理後台裡也可以打開 MySQL 服務的管理面板，在這裡管理面板中可以看到一些目前 MySQL 資料庫的使用狀況。
+
+![MySQL 管理面板](https://skgitbook.blob.core.windows.net/azurerecipestw/ch02/mysql_panel.png)
+
+_**圖 8**_. MySQL 管理面板
+
+而如果要進階的管理，就按下面板上方的 **管理資料庫**，就會開啟 ClearDB 網站的管理畫面來進行管理，你也可以在這裡調整資料庫的價格方案。
+
+![cleardb 的管理畫面](https://skgitbook.blob.core.windows.net/azurerecipestw/ch02/cleardb_mgmt.png)
+
+_**圖 9**_. cleardb 的管理畫面
 
