@@ -13,6 +13,7 @@
   * [架設 WordPress 部落格網站](ch02/create_wordpress_website.md)
 3. 虛擬機器管理
 4. 資料庫及資料儲存平台
+  * [使用 Blob 儲存體服務儲存檔案及提供檔案服務](ch04/using_blob_storage.md)
 5. 資料分析平台
 6. 影音串流平台
 * [帳號訂閱及帳單](chapter01/README.md)
