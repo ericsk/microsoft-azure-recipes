@@ -22,11 +22,21 @@ _**圖 1**_. 建立儲存體帳號
 
 ![選擇不同等級的備援](https://skgitbook.blob.core.windows.net/azurerecipestw/ch04/storage_price_plan.png)
 
+_**圖 2**_. 選擇不同的定價方案
+
 不同的價格方案最主要的差異就是備援的方式，除了高階（premium）的儲存體方案是 10 倍的效能之外（單一檔案 _5,000_ IOPS）。而顯示的價格是 _**100GB 一個月**_的預估價格，你可以根據實際用量按比例去計算出預估花費。
 
-設定完成後就可以立即建立，如果沒有其它的錯誤就會顯示儲存體的管理面板。
+設定完成後就可以立即建立，如果沒有其它的錯誤就會顯示儲存體的管理面板，比較常用的功能會像是找到存取的金鑰，因為預設狀況下要透過帳戶名稱 + 金鑰(主要或次要其中一把)來驗證存取。而金鑰資訊要妥善保存使用，如果不慎外流的話，也可以利用上面的 **重新產生** 按鈕產生新的金鑰並且註銷原本的金鑰。
 
+![取得金鑰內容](https://skgitbook.blob.core.windows.net/azurerecipestw/ch04/get_storage_key.png)
 
+_**圖 3**_. 取得金鑰內容
+
+另外，在建立儲存體帳號時，也會根據選用的名稱配發一個 URL （_http://名稱.blob.core.windows.net/_）使用，如果想要換成自己的網域，也可以在自訂網域中設定。
+
+![自訂網域](https://skgitbook.blob.core.windows.net/azurerecipestw/ch04/setting_custom_domain.png)
+
+_**圖 4**_. 自訂網域
 
 ### 容器以及上傳檔案
 
