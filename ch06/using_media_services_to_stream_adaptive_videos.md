@@ -60,10 +60,52 @@ _**圖 4**_ 觀看目前轉檔編碼工作的狀態
 
 ![](https://skgitbook.blob.core.windows.net/azurerecipestw/ch06/multiple_bitrate.png)
 
+_**圖 5**_ 編碼完後產生的多個位元率的影音檔
+
 
 ### 設定串流單位
 
 如果只是一個單一位元率的影音檔案，其實透過 Azure 媒體服務編碼轉檔後，也放在儲存體中，其實直接透過 URL 就能直接（漸進式）下載觀看。在我們使用調適型位元率的方式編碼轉檔完成後，還必須透過**動態封裝**的方式才能提供給播放影音的播放器有動態調整畫質的能力。
 
 要能夠動態封裝，就必須使用**串流單位（streaming unit）**來進行，你可以到 _資料流端點_ 的頁面設定，你可以看到預設就有一個名稱為 _default_ 的端點，不過它的單位是 0，我們可以直接調整它來使用。
+
+![](https://skgitbook.blob.core.windows.net/azurerecipestw/ch06/streaming_endpoint.png)
+
+_**圖 6**_ 資料流端點
+
+進入資料流端點的設定，為了要能動態封裝，至少要保留一個單位，而這個單位也會決定這個串流服務的頻寬大小，所以如果需要較高的頻寬就需要提高資料流單位的數量。
+
+![](https://skgitbook.blob.core.windows.net/azurerecipestw/ch06/datastream_capacity_unit.png)
+
+_**圖 7**_ 設定資料流單位，除了啟用動態封裝之外，也決定了串流的頻寬
+
+決定單位數量後，可以按下下方的 **儲存** 按鈕確認變更。
+
+### 發行內容
+
+在編碼完成也轉好檔、也設定了資料流單位，接下來就是將內容發佈來取得播放的 URL 了。回到 _內容_ 的頁面，選擇編碼後的內容，然後按下下方的 **發行** 按鈕，完成發行後，就可以看到該內容有了 _發行 URL_。
+
+![](https://skgitbook.blob.core.windows.net/azurerecipestw/ch06/publishing_content.png)
+
+_**圖 8**_ 發行影音媒體內容
+
+而這個 URL 所產出的是 SmoothStreaming 格式的串流 URL，如果你的播放器要吃不同的格式，其實只要在這個 URL 後面帶不同的參數即可，注意,都是在最後面加上 ```(format=...)``` 這樣格式的參數
+
+* **SmoothStreaming**: http://gitbooksample.streaming.mediaservices.windows.net/5a61b321-72a4-4926-92e0-7145f38e43a5/WP_20150529_20_54_14_Pro.ism/Manifest
+* **HLS (v4)**: http://gitbooksample.streaming.mediaservices.windows.net/5a61b321-72a4-4926-92e0-7145f38e43a5/WP_20150529_20_54_14_Pro.ism/Manifest(format=m3u8-aapl)
+* **HLS (v3)**: http://gitbooksample.streaming.mediaservices.windows.net/5a61b321-72a4-4926-92e0-7145f38e43a5/WP_20150529_20_54_14_Pro.ism/Manifest(format=m3u8-aapl-v3)
+* **MPEG DASH**: http://gitbooksample.streaming.mediaservices.windows.net/5a61b321-72a4-4926-92e0-7145f38e43a5/WP_20150529_20_54_14_Pro.ism/Manifest(format=mpd-time-csf)
+
+
+這樣就可以開始提供串流服務了，你可以在 _內容_ 頁面利用下方的 **播放** 按鈕來啟動簡單的播放器測試，如果可以順利播放就表示這個發行沒有問題了。
+
+![](https://skgitbook.blob.core.windows.net/azurerecipestw/ch06/play_adaptive_streaming.png)
+
+_**圖 9**_ 測試串流播放的內容
+
+當然，你隨時都可以取消發行內容。
+
+## 參考資源
+
+你也可以利用 [Azure Media Player](http://amsplayer.azurewebsites.net/azuremediaplayer.html) 這個工具來客製一個現成的播放器（而且支援動態調整畫質）；或是使用 [Player Framework](http://playerframework.codeplex.com/) 來自己打造播放器。
 
